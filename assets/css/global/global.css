@@ -1,0 +1,27 @@
+.cursor-pointer{
+    cursor: pointer;
+}
+.material-icons.dark-blue{
+    color:rgb(26, 0, 78);
+}
+.material-icons.tiny{
+    font-size: 1rem;
+}
+.material-icons.small{
+    font-size: 2rem;
+}
+.material-icons.medium{
+    font-size: 4rem;
+}
+.material-icons.large{
+    font-size: 6rem; 
+}
+.title{
+    font-size: 24px;
+}
+.fs-1{
+    font-size: 1rem;
+}
+.fs-2{
+    font-size: 2rem;
+}

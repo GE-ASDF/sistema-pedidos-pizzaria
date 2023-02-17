@@ -1,0 +1,22 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L]
+RewriteCond %{QUERY_STRING} "script"
+RewriteRule .* - [F]
+Options -Indexes
+<FilesMatch "config$">
+
+    Deny from all
+
+</FilesMatch>
+<FilesMatch "\.json$">
+
+    Order allow,deny
+    Allow from 10.0.0.120
+
+</FilesMatch>
+
+<Limit PUT DELETE>
+    Deny from all
+</Limit>

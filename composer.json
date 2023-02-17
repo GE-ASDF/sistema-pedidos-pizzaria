@@ -1,0 +1,29 @@
+{
+    "name": "anderson/pizzaria",
+    "autoload": {
+        "psr-4": {
+            "Anderson\\Pizzaria\\": "src/",
+            "app\\":"app"
+        },
+        "files":[
+            "app/functions/formatDate.php",
+            "app/functions/filtrarProfessor.php",
+            "app/helpers/constants.php",
+            "app/helpers/dd.php",
+            "app/helpers/flash.php",
+            "app/helpers/print.php",
+            "app/helpers/session.php",
+            "app/helpers/paragrafar.php",
+            "app/helpers/redirect.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Anderson"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.6",
+        "filp/whoops": "^2.14"
+    }
+}
